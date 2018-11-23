@@ -1,8 +1,9 @@
 # Contest / Problemset Solutions
-## codeforces.com
+codeforces.com
 
-# File Naming Convention
-## Complete solutions are found in /complete
+## File Naming Convention
+Complete solutions are found in /complete
+
 c - /contest/#
 
 p - /problem/#
