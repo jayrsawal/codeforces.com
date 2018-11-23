@@ -2,7 +2,7 @@
 codeforces.com
 
 ## File Naming Convention
-Complete solutions are found in /complete
+Complete solutions are found in /codeforces/complete
 
 c - /contest/#
 
