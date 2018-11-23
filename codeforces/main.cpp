@@ -10,7 +10,6 @@
 #include <vector>
 #include <map>
 #include <set>
-#include <algorithm>
 using namespace std;
 
 bool traverse(set<int> &used, vector<set<int> > edges, int start, int goal) {
