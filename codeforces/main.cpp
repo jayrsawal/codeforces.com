@@ -23,18 +23,17 @@ int getSum(int x) {
 }
 
 struct branch {
-    string s = " ";
+    string s = "";
     int rem = 0;
     int sum = 0;
 } b;
 
 int main(int argc, const char * argv[]) {
-    cout << "go: ";
     int d, s;
     cin >> d >> s;
     bool visited[500][5000];
     queue<branch> q;
-    b = (branch) {.s=" ", .rem=0, .sum=0};
+    b = (branch) {.s="", .rem=0, .sum=0};
     q.push(b);
     while(!q.empty()) {
         branch x = q.front();
@@ -52,7 +51,7 @@ int main(int argc, const char * argv[]) {
                 q.push( (branch){.s=str, .rem=rem, .sum=sum} );
                 visited[rem][sum] = true;
             }
-        }
+        }/Users/jayrsawal/GitHub/codeforces.com/codeforces/complete/c1070pA.cpp
     }
     cout << "-1";
 // the naive method takes too long

@@ -23,18 +23,17 @@ int getSum(int x) {
 }
 
 struct branch {
-    string s = " ";
+    string s = "";
     int rem = 0;
     int sum = 0;
 } b;
 
 int main(int argc, const char * argv[]) {
-    cout << "go: ";
     int d, s;
     cin >> d >> s;
     bool visited[500][5000];
     queue<branch> q;
-    b = (branch) {.s=" ", .rem=0, .sum=0};
+    b = (branch) {.s="", .rem=0, .sum=0};
     q.push(b);
     while(!q.empty()) {
         branch x = q.front();
@@ -55,12 +54,12 @@ int main(int argc, const char * argv[]) {
         }
     }
     cout << "-1";
-// the naive method takes too long
-//    int min = s/9;
-//    int start = (pow(10, min) / d);
-//    start = start * d + d;
-//    while(getSum(start) != s) {
-//        start += d;
-//    };
-//    cout << start;
+    // the naive method takes too long
+    //    int min = s/9;
+    //    int start = (pow(10, min) / d);
+    //    start = start * d + d;
+    //    while(getSum(start) != s) {
+    //        start += d;
+    //    };
+    //    cout << start;
 }
